@@ -1,0 +1,19 @@
+//Remove Duplicate from sorted array
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int i=0;
+        HashMap<Integer,Integer>map=new HashMap<>();
+        for(int num:nums)
+        {
+            if(!map.containsKey(num))
+            {
+              map.put(num,1);
+              nums[i]=num;
+              i++;
+            }
+        }
+        return i;
+        
+    }
+}
