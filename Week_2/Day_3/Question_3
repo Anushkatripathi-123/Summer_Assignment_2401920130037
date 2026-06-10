@@ -1,0 +1,11 @@
+//Repeated Substring Pattern
+
+class Solution {
+    public boolean repeatedSubstringPattern(String s) 
+    {
+       String two=s+s;
+       String middle=two.substring(1,two.length()-1);
+       return middle.contains(s); 
+        
+    }
+}
