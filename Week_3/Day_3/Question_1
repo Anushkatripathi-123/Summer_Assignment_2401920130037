@@ -10,6 +10,7 @@ class Solution {
         if(ch[i]=='('||ch[i]=='{'||ch[i]=='[')
         {
             st.push(ch[i]);
+        }
         else
         {
             if(st.isEmpty())return false;
